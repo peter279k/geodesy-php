@@ -41,7 +41,7 @@ class LLA2ECEF extends BaseConversion implements ConversionInterface
 
         $this->ecef->setY($this->getUnit()->convert(( $n + $alt ) * cos( $lat ) * sin( $long )));    //ECEF y
 
-        $this->ecef->setZ($this->getUnit()->convert(( ( 1 - $esq ) * $n + $alt ) * sin( $lat )));          //ECEF z
+        $this->ecef->setZ($this->getUnit()->convert(( ( 1 - $esq ) * $n + $alt ) * sin( $lat )));    //ECEF z
 
         return $this->ecef;
 

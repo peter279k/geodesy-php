@@ -5,8 +5,9 @@ use Geodesy\Location\LatLong;
 use Geodesy\Unit\KiloMetre;
 use Geodesy\Distance\HaversineFormula;
 use Geodesy\Distance\VincentyFormula;
+use PHPUnit\Framework\TestCase;
 
-class DistanceTest extends \PHPUnit_Framework_TestCase
+class DistanceTest extends TestCase
 {   
     public function testVincentyDistance()
     {

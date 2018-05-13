@@ -6,8 +6,9 @@ use Geodesy\Location\ECEF;
 use Geodesy\Unit\KiloMetre;
 use Geodesy\Conversion\LLA2ECEF;
 use Geodesy\Conversion\ECEF2LLA;
+use PHPUnit\Framework\TestCase;
 
-class ConversionTest extends \PHPUnit_Framework_TestCase
+class ConversionTest extends TestCase
 {   
     public function testLLA2ECEF()
     {

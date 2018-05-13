@@ -8,7 +8,7 @@ use Geodesy\Datum\WGS84;
 class HaversineFormula extends BaseDistance implements DistanceInterface
 {
 
-    private $commonDatum;
+    protected $commonDatum;
 
     public function __construct(LatLong $source, LatLong $destination)
     {
